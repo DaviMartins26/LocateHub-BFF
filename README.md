@@ -16,16 +16,6 @@ Este projeto atua como a camada intermediária entre o Frontend (React) e os mic
 * **Dotenv**: Gestão de variáveis de ambiente para segurança de credenciais.
 * **Swagger-jsdoc & Swagger-ui-express**: Geração e exibição da documentação técnica da API.
 
-## 📂 Estrutura de Pastas
-```text
-/bff-locatehub
-├── /src
-│    ├── /routes
-│    │    ├── itemRoutes.js  (Comunicação com Microserviço de Itens - NoSQL)
-│    │    └── userRoutes.js  (Comunicação com Microserviço de Usuários - SQL)
-│    └── server.js           (Ponto de entrada e configuração global)
-├── .env                     (Configurações de ambiente)
-└── package.json             (Gerenciamento de dependências)
 
 ## 🔧 Execução Local
 
@@ -41,6 +31,7 @@ Este projeto atua como a camada intermediária entre o Frontend (React) e os mic
     PORT=3000
     URL_ITENS=http://localhost:8081/api/itens
     URL_USUARIOS=http://localhost:8082/api/usuarios
+    URL_AZURE_FUNCTION=http://localhost:7071/api/CalcularAluguel
     ```
 
 3.  **Inicie o servidor**:
@@ -60,3 +51,14 @@ Este projeto atua como a camada intermediária entre o Frontend (React) e os mic
 ## 👥 Desenvolvedores
 * **Davi Martins**
 * **Joshua Mendes**
+
+## 📂 Estrutura de Pastas
+```text
+/bff-locatehub
+├── /src
+│    ├── /routes
+│    │    ├── itemRoutes.js  (Comunicação com Microserviço de Itens - NoSQL)
+│    │    └── userRoutes.js  (Comunicação com Microserviço de Usuários - SQL)
+│    └── server.js           (Ponto de entrada e configuração global)
+├── .env                     (Configurações de ambiente)
+└── package.json             (Gerenciamento de dependências)
